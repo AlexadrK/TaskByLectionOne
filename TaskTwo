@@ -1,1 +1,18 @@
-
+import java.util.Random;
+//массив целых чисел
+public class two {
+    public static void main(String[] args) {
+        int[] array = new int[20];
+        int s = 0;
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(31) - 15;
+            System.out.print(array[i]); //выводим результат
+            if ((array[i] % 2 == 0) && (array[i] != 0)) { //четное число и не равняеться 0
+                s++;
+            }
+        }
+        System.out.println("");
+        System.out.print("Количество четных чисел в массиве: " + s);
+    }
+}
