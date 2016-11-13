@@ -7,7 +7,7 @@ public class two {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(31) - 15;
-            System.out.print(array[i]); //выводим результат
+            System.out.print(array[i]+"\t"); //выводим результат, "\t добавляет пробел между цифрами"
             if ((array[i] % 2 == 0) && (array[i] != 0)) { //четное число и не равняеться 0
                 s++;
             }
