@@ -1,0 +1,21 @@
+import java.util.Random;
+// посчитать среднее арифметическое массива
+//массив целых чисел
+public class two {
+    public static void main(String[] args) {
+        int[] array = new int[20];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(31) - 0;
+            System.out.print(+array[i]+ "\t"); //выводим результат, "\t добавляет пробел между цифрами"
+            }
+        int sum=0;                                          //сумма массива
+        for (int num:array){
+            sum=sum+num;
+        }
+        System.out.println("");
+        System.out.println("Сумма элементов массива " +sum);//выводим сумму массива
+        System.out.println("кол-во элементов массива "+array.length); //казываем кол-во элементов массива
+        System.out.println("среднее арифметическое "+sum/array.length); //находим среднее арифмет-е
+         }
+     }
